@@ -3,11 +3,13 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import Glide from '@glidejs/glide'
 
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+    router,
+    store,
+    Glide,
+    render: h => h(App)
+}).$mount('#slider')
